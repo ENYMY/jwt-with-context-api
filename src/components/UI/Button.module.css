@@ -1,0 +1,14 @@
+.button {
+  border-style: none;
+  width: 50%;
+  height: 100%;
+  font-family: inherit;
+  font-size: 15px;
+  color: azure;
+  background-color: #009788;
+  border-radius: 15px;
+  border: 1px solid #000;
+  margin-top: 15px;
+  padding: 5px;
+  align-self: center;
+}

@@ -1,8 +1,12 @@
 import React from "react";
 import classes from "./SignupPage.module.css";
+import TextField from "../UI/TextField";
+import Button from "../UI/Button";
+import BoxContainer from "../UI/BoxContainer";
+
 const SignupPage = () => {
   return (
-    <div className={classes.container}>
+    <BoxContainer>
       <img
         className={classes.image}
         src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUHK_xd4GHWvzXkA3DygGiU3---JdQdHXbA_uTguFvckcwsMDakFodlYlaQMv4p6fWM5I&usqp=CAU'
@@ -10,44 +14,27 @@ const SignupPage = () => {
       />
 
       <form className={classes.container__form}>
-        <div className={classes.input__field}>
-          <input
-            type='text'
-            placeholder='enymy7'
-            id='username'
-            className={classes.input}
-          />
-          <label htmlFor='username' className={classes.label}>
-            Username
-          </label>
-        </div>
-        <div className={classes.input__field}>
-          <input
-            type='email'
-            placeholder='enymy7@gmail.com'
-            id='email'
-            className={classes.input}
-          />
-          <label htmlFor='email' className={classes.label}>
-            Email
-          </label>
-        </div>
-        <div className={classes.input__field}>
-          <input
-            type='password'
-            id='password'
-            className={classes.input}
-            placeholder='**'
-          />
-          <label htmlFor='password' className={classes.label}>
-            Password
-          </label>
-        </div>
-        <button type='submit' className={classes.form__button}>
-          Sign Up
-        </button>
+        <TextField
+          type='text'
+          placeholder='enymy7'
+          id='username'
+          labelName='Username'
+        />
+        <TextField
+          type='email'
+          placeholder='enymy7@gmail.com'
+          id='email'
+          labelName='Email'
+        />
+        <TextField
+          type='password'
+          id='password'
+          placeholder='**'
+          labelName='Password'
+        />
+        <Button type='submit'>Sign Up</Button>
       </form>
-    </div>
+    </BoxContainer>
   );
 };
 
