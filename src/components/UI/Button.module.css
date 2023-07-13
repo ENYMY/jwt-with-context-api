@@ -1,7 +1,6 @@
 .button {
   border-style: none;
   width: 50%;
-  height: 100%;
   font-family: inherit;
   font-size: 15px;
   color: azure;
@@ -11,4 +10,6 @@
   margin-top: 15px;
   padding: 5px;
   align-self: center;
+  flex-direction: row;
+  align-items: center;
 }
