@@ -1,40 +1,39 @@
 .nav {
-    width: 100vw;
-    height: 11.5vh;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    color: aqua;
-    position: fixed;
+  width: 100vw;
+  height: 10vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: aqua;
+  position: fixed;
+  z-index: 1;
 }
 
 .appTitle {
-
-    color: aqua;
-    flex: 0.2;
-    font-size: 30px;
-
+  color: aqua;
+  flex: 0.2;
+  font-size: 30px;
 }
 
 .links {
-    display: flex;
-    gap: 24px;
-    flex: 1;
+  display: flex;
+  gap: 24px;
+  flex: 1;
 
-    font-family: cursive;
-    flex-direction: row;
-    justify-content: flex-end;
+  font-family: cursive;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .links li {
-    list-style: none;
-    padding-right: 10px;
-    font-size: 18px;
-    border: 1px solid #ddd;
-
+  list-style: none;
+  padding-right: 10px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  align-self: center;
 }
 
 .links li:hover {
-    background-color: yellow;
+  background-color: yellow;
 }
